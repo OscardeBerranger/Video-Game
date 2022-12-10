@@ -1,0 +1,29 @@
+:root{
+    --var-posY: 50vh;
+    --var-posX: 50vw;
+}
+body{
+    background-color: #003646;
+}
+.titre{
+    color: white;
+}
+.personnage{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform-origin: bottom center;
+    top: var(--var-posY);
+    left: var(--var-posX);
+}
+
+.box{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #6e4521;
+    transform-origin: bottom center;
+    top: 20vh;
+    left: 20vw;
+}
