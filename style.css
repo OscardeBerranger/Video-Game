@@ -1,18 +1,23 @@
 :root{
+    /*Character position*/
     --var-posY: 50vh;
-    --var-posX: 50vw;
+    --var-posX: 50vh;
+
+    /*Ennemy position*/
+    --var-posY-ennemy: 40vh;
+    --var-posX-ennemy: 80vh;
 }
 body{
-    background-color: #003646;
+    background-color: black;
 }
-.titre{
+.title{
     color: white;
 }
-.personnage{
+.character{
     position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: red;
+    width: 5vh;
+    height: 10vh;
+    background-color: blue;
     transform-origin: bottom center;
     top: var(--var-posY);
     left: var(--var-posX);
@@ -20,10 +25,19 @@ body{
 
 .box{
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 20vh;
+    height: 20vh;
     background-color: #6e4521;
     transform-origin: bottom center;
     top: 20vh;
-    left: 20vw;
+    left: 20vh;
+}
+.ennemy{
+    position: absolute;
+    width: 5vh;
+    height: 10vh;
+    background-color: red;
+    transform-origin: bottom center;
+    top: var(--var-posY-ennemy);
+    left: var(--var-posX-ennemy);
 }
